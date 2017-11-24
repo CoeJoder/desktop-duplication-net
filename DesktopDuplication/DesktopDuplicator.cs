@@ -70,6 +70,14 @@ namespace DesktopDuplication
             }
         }
 
+        public void Destroy()
+        {
+            _device.Dispose();
+            _deskDupl.Dispose();
+            _desktopImageTexture.Dispose();
+            
+        }
+
         private OutputDuplication CreateOutputDuplication(Output1 output1)
         {
             try
